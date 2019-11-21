@@ -8,8 +8,8 @@ function App() {
     <Fragment>
       <div className="navigation">
         <div className="container">
-          <a href="/">
-            <img src="/logo512.png" alt="Logo"></img>
+          <a href="/website">
+            <img src="logo512.png" alt="Logo"></img>
           </a>
           <h1>LIGHTAINER</h1>
           <nav>

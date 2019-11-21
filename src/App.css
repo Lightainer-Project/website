@@ -61,7 +61,7 @@ h1, h2, h3, h4, h5, p, span, li, ul, a, button {
 }
 
 .header {
-  background: linear-gradient(150deg, rgba(41,108,185,0.6) 30%, rgba(41,108,185,0.6)),url(/server.jpg);
+  background: linear-gradient(150deg, rgba(41,108,185,0.6) 30%, rgba(41,108,185,0.6)),url(img/server.jpg);
   background-size: cover;
   height: 25rem;
 }
