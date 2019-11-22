@@ -22,6 +22,9 @@ function App() {
       </div>
       <div className="header">
         <div className="container">
+          <h1>Manage and Deploy <br/> Services</h1>
+          <p>With Lightainer you can easily maintain, monitor <br/>and configure your server.</p>
+          <button className="button">Get started</button>
         </div>
       </div>
     </Fragment>
