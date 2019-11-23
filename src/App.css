@@ -2,6 +2,25 @@ h1, h2, h3, h4, h5, p, span, li, ul, a, button {
   font-family: 'Roboto', sans-serif;
   margin: 0;
   padding: 0;
+  color: white;
+}
+
+.primary {
+  background-color: #286CBA;
+}
+
+.secondary {
+  background-color: #004289;
+}
+
+.dark {
+  background-color: #333333;
+}
+
+.shadow {
+  -webkit-box-shadow: 0px 0px 30px -8px rgba(0,0,0,0.36);
+  -moz-box-shadow: 0px 0px 30px -8px rgba(0,0,0,0.36);
+  box-shadow: 0px 0px 30px -8px rgba(0,0,0,0.36);
 }
 
 .navigation {
@@ -63,5 +82,36 @@ h1, h2, h3, h4, h5, p, span, li, ul, a, button {
 .header {
   background: linear-gradient(150deg, rgba(41,108,185,0.6) 30%, rgba(41,108,185,0.6)),url(img/server.jpg);
   background-size: cover;
-  height: 25rem;
+}
+
+.cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: 20rem;
+  margin-right: 20rem;
+  margin-top: -5rem;
+}
+
+.card {
+  height: 24rem;
+  width: 24.8rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.card h1 {
+  margin: 3rem;
+}
+
+.card p {
+  margin: 3rem;
+  margin-top: 1rem;
+  font-size: 1.25rem;
+  min-height: 3rem;
+  max-height: 3rem;
+}
+
+.card button {
+  margin: auto;
 }
