@@ -29,6 +29,9 @@ h1, h2, h3, h4, h5, p, span, li, ul, a, button {
   z-index: 2;
   background-color: transparent;
   background-color: rgba(0,0,0, 0.4);
+  -webkit-transition: all ease 0.5s;
+	-moz-transition: all ease 0.5s;
+	transition: all ease 0.5s;
 }
 
 .navigation .container {
@@ -88,8 +91,8 @@ h1, h2, h3, h4, h5, p, span, li, ul, a, button {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin-left: 20rem;
-  margin-right: 20rem;
+  margin-left: 15%;
+  margin-right: 15%;
   margin-top: -5rem;
 }
 
@@ -112,6 +115,13 @@ h1, h2, h3, h4, h5, p, span, li, ul, a, button {
   max-height: 3rem;
 }
 
-.card button {
+.card .button {
   margin: auto;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #3f3f3f;
 }
