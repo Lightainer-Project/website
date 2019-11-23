@@ -22,28 +22,28 @@ function App() {
       </div>
       <div className="header">
         <div className="container">
-          <h1>Manage and Deploy <br/> Services</h1>
-          <p>With Lightainer you can easily maintain, monitor <br/>and configure your server.</p>
+          <h1>Manage and Deploy <br /> Services</h1>
+          <p>With Lightainer you can easily maintain, monitor <br />and configure your server.</p>
           <button className="button">Get started</button>
         </div>
       </div>
       <div className="cards">
-          <div className="card primary shadow">
-            <h1>Demo</h1>
-            <p>Check out Lightainer in our Demo</p>
-            <button className="button">Demo</button>
-          </div>
-          <div className="card dark shadow">
-            <h1>Modules</h1>
-            <p>Take a look in our Marketplace to <br/>check out other Modules you <br/>can use with Lightainer</p>
-            <button className="button">Marketplace</button>
-          </div>
-          <div className="card secondary shadow">
-            <h1>Support</h1>
-            <p>You got a problem with<br/>Lightainer? Create a Issue<br/>on Github an we can help</p>
-            <button className="button">Issues</button>
-          </div>
+        <div className="card primary shadow">
+          <h1>Demo</h1>
+          <p>Check out Lightainer in our Demo</p>
+          <button className="button">Demo</button>
         </div>
+        <div className="card dark shadow">
+          <h1>Modules</h1>
+          <p>Take a look in our Marketplace to <br />check out other Modules you <br />can use with Lightainer</p>
+          <button className="button">Marketplace</button>
+        </div>
+        <div className="card secondary shadow">
+          <h1>Support</h1>
+          <p>You got a problem with<br />Lightainer? Create a Issue<br />on Github an we can help</p>
+          <button className="button">Issues</button>
+        </div>
+      </div>
     </Fragment>
   );
 }
