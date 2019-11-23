@@ -48,12 +48,15 @@ function App() {
         <a href="http://frozencloud.de/" target="_blank" rel="noopener noreferrer"><img src="frozencloud.png" alt="frozencloud logo"/></a>
         <a href="https://kabema-consulting.de/" target="_blank" rel="noopener noreferrer"><img src="kabema.png" alt="kabema logo"/></a>
       </div>
+    </Fragment>
+  );
+}
+
+/*
       <div className="textbox dark">
         <h1></h1>
         <p></p>
       </div>
-    </Fragment>
-  );
-}
+*/
 
 export default App;
