@@ -1,22 +1,117 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+h1, h2, h3, h4, h5, p, span, li, ul, a, button {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
   color: white;
 }
 
-.App-link {
-  color: #09d3ac;
+.primary {
+  background-color: #286CBA;
+}
+
+.secondary {
+  background-color: #004289;
+}
+
+.dark {
+  background-color: #333333;
+}
+
+.shadow {
+  -webkit-box-shadow: 0px 0px 30px -8px rgba(0,0,0,0.36);
+  -moz-box-shadow: 0px 0px 30px -8px rgba(0,0,0,0.36);
+  box-shadow: 0px 0px 30px -8px rgba(0,0,0,0.36);
+}
+
+.navigation {
+  position: absolute;
+  width: 100%;
+  z-index: 2;
+  background-color: transparent;
+  background-color: rgba(0,0,0, 0.4);
+}
+
+.navigation .container {
+  position: relative;
+  margin: 0 1rem 0 1rem;
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: space-between;
+}
+
+.navigation h1 {
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-size: 40pt;
+  font-weight: 200;
+  margin: auto auto auto 1rem;
+}
+
+.navigation a {
+  display: flex;
+}
+
+.navigation img {
+  max-height: 5.5rem;
+  margin: auto;
+}
+
+.navigation nav {
+  color: white;
+  margin-left: auto;
+  display: flex;
+}
+
+.navigation nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+}
+
+.navigation nav ul li{
+  margin-right: 2rem;
+}
+
+.navigation nav ul li a{
+  text-decoration: none;
+  color: white;
+}
+
+.header {
+  background: linear-gradient(150deg, rgba(41,108,185,0.6) 30%, rgba(41,108,185,0.6)),url(img/server.jpg);
+  background-size: cover;
+}
+
+.cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: 20rem;
+  margin-right: 20rem;
+  margin-top: -5rem;
+}
+
+.card {
+  height: 24rem;
+  width: 24.8rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.card h1 {
+  margin: 3rem;
+}
+
+.card p {
+  margin: 3rem;
+  margin-top: 1rem;
+  font-size: 1.25rem;
+  min-height: 3rem;
+  max-height: 3rem;
+}
+
+.card button {
+  margin: auto;
 }

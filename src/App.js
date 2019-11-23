@@ -1,61 +1,50 @@
 import React from 'react';
+import { Fragment } from 'react';
 import './App.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
-
-import { Navbar, Nav, Button, Carousel } from 'react-bootstrap';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHome, faFile, faBoxOpen } from '@fortawesome/free-solid-svg-icons';
-import { faGithub } from '@fortawesome/free-brands-svg-icons';
+//import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (
-    <div>
-      <Navbar bg="light" expand="lg">
-        <Navbar.Brand href="#home"><FontAwesomeIcon icon={faBoxOpen} /> Lightainer</Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="mr-auto">
-            <Nav.Link href="#home"><FontAwesomeIcon icon={faHome} /> Home</Nav.Link>
-            <Nav.Link href="#link"><FontAwesomeIcon icon={faFile} /> Documentaion</Nav.Link>
-          </Nav>
-          <Button variant="outline-secondary" href="https://github.com/Lightainer-Project/Lightainer" target="_blank"><FontAwesomeIcon icon={faGithub} /> Github</Button>
-        </Navbar.Collapse>
-      </Navbar>
-      <Carousel className="m-4">
-        <Carousel.Item>
-          <img
-            className="d-block w-100 h-20 cover"
-            width="1200px"
-            height="300px"
-            src="https://images.pexels.com/photos/574071/pexels-photo-574071.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-            alt="First slide"
-          />
-          <Carousel.Caption>
-            <h3>First slide label</h3>
-            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-          </Carousel.Caption>
-        </Carousel.Item>
-        <Carousel.Item>
-          <img
-            className="d-block w-100 h-20 cover"
-            width="1200px"
-            height="300px"
-            src="https://images.pexels.com/photos/270632/pexels-photo-270632.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
-            alt="First slide"
-          />
-          <Carousel.Caption>
-            <h3>Module Based</h3>
-            <p>Easily extensable</p>
-          </Carousel.Caption>
-        </Carousel.Item>
-      </Carousel>
-      <div className="d-flex flex-column" id="home">
-        <div className="ml-auto mr-auto text-center">
-          <h1>Lightainer <small className="text-muted">Service Manager</small></h1>
-          <p>Lightainer is a module based Service Manager. With it you can start/stop and configure your services.</p>
+    <Fragment>
+      <div className="navigation">
+        <div className="container">
+          <a href="/website">
+            <img src="logo512.png" alt="Logo"></img>
+          </a>
+          <h1>LIGHTAINER</h1>
+          <nav>
+            <ul>
+              <li><a href="#documentation">Documentation</a></li>
+              <li><a href="https://github.com/Lightainer-Project/Lightainer">Github</a></li>
+            </ul>
+          </nav>
         </div>
       </div>
-    </div>
+      <div className="header">
+        <div className="container">
+          <h1>Manage and Deploy <br /> Services</h1>
+          <p>With Lightainer you can easily maintain, monitor <br />and configure your server.</p>
+          <button className="button">Get started</button>
+        </div>
+      </div>
+      <div className="cards">
+        <div className="card primary shadow">
+          <h1>Demo</h1>
+          <p>Check out Lightainer in our Demo</p>
+          <button className="button">Demo</button>
+        </div>
+        <div className="card dark shadow">
+          <h1>Modules</h1>
+          <p>Take a look in our Marketplace to <br />check out other Modules you <br />can use with Lightainer</p>
+          <button className="button">Marketplace</button>
+        </div>
+        <div className="card secondary shadow">
+          <h1>Support</h1>
+          <p>You got a problem with<br />Lightainer? Create a Issue<br />on Github an we can help</p>
+          <button className="button">Issues</button>
+        </div>
+      </div>
+    </Fragment>
   );
 }
 
