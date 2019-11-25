@@ -59,14 +59,14 @@ code {
   width: 20rem;
   object-fit: contain;
   filter: grayscale(100%);
+  -webkit-transition: all ease 0.5s;
+  -moz-transition: all ease 0.5s;
+  transition: all ease 0.5s;
   
 }
 
 .showcase img:hover {
   filter: grayscale(0%);
-  -webkit-transition: all ease 0.5s;
-	-moz-transition: all ease 0.5s;
-	transition: all ease 0.5s;
 }
 
 .textbox {
